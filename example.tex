@@ -1,0 +1,70 @@
+% #################################################
+\newcommand{\titel}{Beispieltitel f\"{u}r diese Arbeit}
+\newcommand{\untertitel}{Untertitel dieser Arbeit}
+\newcommand{\art}{M. Sc.}
+\newcommand{\fachgebiet}{Elektro- und Informationstechnik}
+\newcommand{\autortitle}{B.\,Sc.}
+\newcommand{\autor}{Max Beispiel}
+\newcommand{\studienbereich}{Elektro- und Informationstechnik}
+\newcommand{\matrikelnr}{123\,456\,78}
+\newcommand{\jahr}{\the\year}
+\newcommand{\ort}{Nürnberg}
+\newcommand{\hochschule}{Technische Hochschule N\"{u}rnberg \\Georg Simon Ohm}
+\newcommand{\fachbereich}{Elektro- und Informationstechnik}
+\newcommand{\betreuer}{Prof. Dr. Peter Mustermann}
+\newcommand{\schlagwortA}{SchlagwortA}
+\newcommand{\schlagwortB}{SchlagwortC}
+\newcommand{\schlagwortC}{SchlagwortC}
+\newcommand{\schlagwortD}{SchlagwortD}     
+
+\newcommand{\zitat}{"Jede hinreichend fortgeschrittene Technologie \\ ist von Magie nicht mehr zu unterscheiden."\\[2ex]00
+	\textit{Sir Arthur Charles Clarke  (1917-2008)}, \\
+	 Britischer Science-Fiction Autor, Erfinder, and Futurist}
+\newcommand{\vorwort}{Ich danke allen die mir geholfen haben. } %
+\newcommand{\zusammenfassungDE}{Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.} %
+\newcommand{\zusammenfassungEN}{Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.} %
+
+\def\textLanguage{ger}      % ger oder eng
+\def\print{true}	        % true oder false
+
+% ################################################
+\documentclass[
+    12pt,										
+    DIV12,
+    ngerman, 							
+    a4paper, 												    		
+    %twoside,
+    oneside,   								
+    %openright,								
+    onecolumn, 
+    titlepage, 							
+    parskip=half, 					
+    headings=normal, 
+    listof=totoc, 						
+    bibliography=totoc, 			
+    index=totoc, 	
+    captions=tableheading, 	
+    final 										
+]{ohm_tex_report}
+
+
+\definecolor{maincolor}{RGB}{188,199,46}
+
+
+
+\graphicspath{{01_images/}}
+
+% #################################################
+% Document
+% #################################################
+\begin{document}
+
+
+
+\input{00_lists/00_lists.tex}
+\input{01_content/01_content.tex}
+% \spacing{1.3}
+
+
+
+\end{document}

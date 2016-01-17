@@ -1,0 +1,45 @@
+\thispagestyle{plain}
+\begin{titlepage}
+
+\begin{center}
+\huge{\textbf{\titel}}\\[4.5ex]
+\LARGE{\textbf{\art}}\\[1.5ex]
+\Large{\ifx \textLanguage\eng 	in Department of \else im Fachgebiet \fi \fachgebiet}\\[4ex]
+
+\includegraphics[scale=0.8]{02_images/00_LogoOhmHochschule_Blau.pdf}\\
+\Large{\textbf{\hochschule}}\\[3ex]
+
+\normalsize
+\begin{tabular}{w{5.2cm}p{6.4cm}}\\
+\ifx \textLanguage\eng presented by \else vorgelegt von \fi:  & \quad \autortitle \\
+ 							 & \quad \sc{\autor} \KleinerAbsatz
+\ifx \textLanguage\eng Department \else Fachgebiet \fi: 		 & \quad Electrical Engineering and \\ 
+							 & \quad Information Technology\KleinerAbsatz
+\ifx \textLanguage\eng Course of studies: \else Studiengang: \fi & \quad Master of Applied Research \\
+               & \quad in Engineering Sciences \KleinerAbsatz
+\ifx \textLanguage\eng Matriculation number\else Matrikelnummer\fi: & \quad \matrikelnr \KleinerAbsatz
+\ifx \textLanguage\eng Supervisor\else Betreuer\fi:  	 & \quad \betreuer\\[2ex]  					
+\end{tabular}
+
+\copyright\ \jahr\\[5.5ex]
+
+\begin{table}[htbp]
+	\begin{tabular}{ll}
+		\textbf{\ifx \textLanguage\eng Key words \else Schlüsselwörter \fi}:
+				& \schlagwortA, \schlagwortB, \schlagwortC, \schlagwortD
+	\end{tabular}
+\end{table}
+\end{center}
+\vfill
+\singlespacing
+\small
+\noindent 
+\ifx \textLanguage\eng
+\small{
+Declaration:
+Herewith I declare that this thesis is the result of my independent work. All sources and auxiliary materials used by me in this thesis are cited completely.}
+\else
+\small{
+Dieses Werk einschließlich seiner Teile ist \textbf{urheberrechtlich geschützt}. Jede Verwertung außerhalb der engen Grenzen des Urheberrechtgesetzes ist ohne Zustimmung des Autors unzulässig und strafbar. Das gilt insbesondere für Vervielfältigungen, Übersetzungen, Mikroverfilmungen sowie die Einspeicherung und Verarbeitung in elektronischen Systemen.}
+\fi
+\end{titlepage}

@@ -1,0 +1,31 @@
+% auch subsubsection nummerieren
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% Deckblatt und Abstract ohne Seitenzahl
+\ifoot{}
+\ofoot{}
+\input{00_lists/Deckblatt}
+\input{00_lists/Abstract}
+
+\ofoot{\pagemark}
+
+\pagenumbering{Roman}	
+\tableofcontents 		
+
+% Abkürzungsverzeichnis --------------------------------------------------------
+%\input{Verzeichnisse/Glossar}
+%\input{Verzeichnisse/Abkuerzungen}
+\label{sec:Glossar}
+
+\ifx \textLanguage\eng
+	\addcontentsline{toc}{chapter}{List of Abbreviations}
+\else
+	\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}	
+\fi
+\listoffigures 	
+\listoftables 	
+
+% arabische Seitenzahlen im Hauptteil --------------------------------------\ifx \textLanguage\eng----
+\clearpage
+\pagenumbering{arabic}
