@@ -4,7 +4,7 @@
     automark, 									% Kapitelangaben in Kopfzeile automatisch erstellen
     headsepline, 							% Trennlinie unter Kopfzeile
     ilines 										% Trennlinie linksbündig ausrichten
-]{scrpage2}
+]{scrlayer-scrpage}
 
 % Sprache
 \def\ger{ger}									% Sprache Deutsch
@@ -25,6 +25,10 @@
 \RequirePackage{lmodern} 			% bessere Fonts
 \RequirePackage{relsize} 			% Schriftgröße relativ festlegen
 \RequirePackage{textcomp} 			% Euro-Zeichen etc.
+
+% Blindtext
+\usepackage{blindtext}
+
 
 % Sonderzeichen 
 \RequirePackage{amssymb}
